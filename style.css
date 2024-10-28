@@ -271,3 +271,60 @@ footer p {
         padding: 30px 10px;
     }
 }
+
+
+.features {
+    background-color: #f8f9fa; /* Soft background color */
+  }
+  
+  .features h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .icon {
+    font-size: 3rem;
+    color: #007bff; /* Accent color */
+  }
+  
+  /* Responsive Text Adjustments */
+  @media (max-width: 768px) {
+    .features h2 {
+      font-size: 1.75rem;
+    }
+  
+    .icon {
+      font-size: 2.5rem;
+    }
+  
+    .card p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .features h2 {
+      font-size: 1.5rem;
+    }
+  
+    .icon {
+      font-size: 2rem;
+    }
+  
+    .card p {
+      font-size: 0.85rem;
+    }
+  }
+  

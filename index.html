@@ -85,11 +85,12 @@
     </section>
 
     <!-- Features Section -->
+    <!-- Features Section -->
     <section id="features" class="features py-5">
       <div class="container">
-        <h2 class="text-center">Our Core Features</h2>
+        <h2 class="text-center mb-5">Our Core Features</h2>
         <div class="row">
-          <div class="col-md-4 text-center">
+          <div class="col-lg-4 col-md-6 col-sm-12 text-center">
             <div class="card mb-4">
               <div class="card-body">
                 <span class="icon display-4">🔒</span>
@@ -98,7 +99,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 text-center">
+          <div class="col-lg-4 col-md-6 col-sm-12 text-center">
             <div class="card mb-4">
               <div class="card-body">
                 <span class="icon display-4">⚡</span>
@@ -110,7 +111,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 text-center">
+          <div class="col-lg-4 col-md-6 col-sm-12 text-center">
             <div class="card mb-4">
               <div class="card-body">
                 <span class="icon display-4">🌐</span>
@@ -121,45 +122,6 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Milestones Section -->
-    <section class="our-journey">
-      <h2>Our Journey</h2>
-      <div class="journey-timeline">
-        <div class="journey-item">
-          <h3>Founded in 2024</h3>
-          <p>
-            In 2024, we embarked on our mission to deliver innovative digital
-            solutions, aiming to transform the way businesses operate in the
-            digital landscape.
-          </p>
-        </div>
-        <div class="journey-item">
-          <h3>Launched First Product</h3>
-          <p>
-            In early 2024, we successfully launched our first digital product,
-            receiving rave reviews for its user-friendly interface and
-            cutting-edge features, setting the stage for our future growth.
-          </p>
-        </div>
-        <div class="journey-item">
-          <h3>Partnerships Established</h3>
-          <p>
-            By late 2024, we forged strategic partnerships with key industry
-            players, expanding our reach and enhancing our offerings to better
-            serve our clients.
-          </p>
-        </div>
-        <div class="journey-item">
-          <h3>Future Innovations</h3>
-          <p>
-            Looking forward to 2025, we plan to introduce advanced technologies
-            such as AI and machine learning into our product line, aiming to
-            elevate user experience and operational efficiency.
-          </p>
         </div>
       </div>
     </section>
@@ -190,8 +152,9 @@
           Subscribe to our newsletter to get the latest updates, announcements,
           and exclusive content from Neo Zync.
         </p>
-        <form class="form-inline justify-content-center">
+        <form class="form-inline justify-content-center" id="newsletterForm">
           <input
+            id="emailInput"
             type="email"
             class="form-control mr-2"
             placeholder="Enter your email"
@@ -200,6 +163,7 @@
           <button type="submit" class="btn btn-primary">
             Subscribe to Newsletter
           </button>
+          <h1 id="response"></h1>
         </form>
       </div>
     </section>
@@ -211,6 +175,7 @@
     </footer>
 
     <!-- Bootstrap JS and dependencies -->
+    <script type="module" src="./main.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
