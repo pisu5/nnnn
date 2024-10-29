@@ -3,6 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Neo Zync - Pioneering advancements in technology with reliable and innovative solutions tailored for global businesses."
+    />
+    <meta
+      name="keywords"
+      content="Neo Zync, technology, innovation, digital solutions, secure, global access, high performance"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Neo Zync" />
+    <!-- Open Graph Tags -->
+    <meta
+      property="og:title"
+      content="Neo Zync - Powering the Future of Innovation"
+    />
+    <meta
+      property="og:description"
+      content="Join Neo Zync on our journey to innovate and lead in digital solutions."
+    />
+    <meta property="og:url" content="https://www.neozync.com" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://your-username.github.io/your-repo-name/logo.png"
+    />
+
+    <!-- Canonical Link -->
+    <link rel="canonical" href="https://www.neozync.com" />
+
+    <!-- Link to Favicons -->
+    <link rel="icon" href="./favicon_io/favicon.ico" type="image/x-icon" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicon_io/site.webmanifest" />
+
     <title>Neo Zync - Coming Soon</title>
     <!-- Bootstrap CSS -->
     <link
@@ -10,7 +61,19 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="./style.css" />
+
+    <!-- Structured Data (Optional) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Neo Zync",
+        "url": "https://www.neozync.com",
+        "logo": "https://your-username.github.io/your-repo-name/logo.png"
+      }
+    </script>
   </head>
+
   <body>
     <!-- Development Phase Notice -->
     <div class="development-notice text-center p-3 bg-warning">
@@ -24,7 +87,9 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
-        <a class="navbar-brand" href="#">Neo Zync</a>
+        <a class="navbar-brand" href="#">
+          <img src="./logo.png" alt="Neo Zync Logo" width="150" height="auto" />
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -85,13 +150,12 @@
     </section>
 
     <!-- Features Section -->
-    <!-- Features Section -->
     <section id="features" class="features py-5">
-      <div class="container">
+      <div id="con" class="container">
         <h2 class="text-center mb-5">Our Core Features</h2>
         <div class="row">
-          <div class="col-lg-4 col-md-6 col-sm-12 text-center">
-            <div class="card mb-4">
+          <div class="col-lg-4 col-md-6 col-sm-12 text-center mb-4">
+            <div class="card">
               <div class="card-body">
                 <span class="icon display-4">🔒</span>
                 <h3>Secure Solutions</h3>
@@ -99,8 +163,8 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 text-center">
-            <div class="card mb-4">
+          <div class="col-lg-4 col-md-6 col-sm-12 text-center mb-4">
+            <div class="card">
               <div class="card-body">
                 <span class="icon display-4">⚡</span>
                 <h3>High Performance</h3>
@@ -111,8 +175,8 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 text-center">
-            <div class="card mb-4">
+          <div class="col-lg-4 col-md-6 col-sm-12 text-center mb-4">
+            <div class="card">
               <div class="card-body">
                 <span class="icon display-4">🌐</span>
                 <h3>Global Access</h3>
@@ -152,7 +216,11 @@
           Subscribe to our newsletter to get the latest updates, announcements,
           and exclusive content from Neo Zync.
         </p>
-        <form class="form-inline justify-content-center" id="newsletterForm">
+        <form
+          class="form-inline justify-content-center"
+          id="newsletterForm"
+          onsubmit="handleSubmit(event)"
+        >
           <input
             id="emailInput"
             type="email"
@@ -175,9 +243,9 @@
     </footer>
 
     <!-- Bootstrap JS and dependencies -->
-    <script type="module" src="./main.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
